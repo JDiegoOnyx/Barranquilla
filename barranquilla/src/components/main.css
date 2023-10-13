@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+/* Inicio - Globales */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+  
+  .seccion-body {
+    flex-grow: 1; /* Ocupa el espacio restante */
+    margin-bottom: 60px; /* Ajusta esto al alto de tu footer */
+  }
+
+  /* Establece el contenedor principal para ocupar toda la altura de la ventana */
+  .main-app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Permite que el footer se ajuste a la parte inferior de este contenedor */
+
+}
+
+/* Configura el footer como posición absoluta en la parte inferior */
+.seccion-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+ 
+
+
+.text-center {
+    text-align: center;
+}
+
+/* Fin - Globales */
+
+/*--------------------------------------[ MENU INICIO FAB ]---------------------------------------------*/
+
+/* Estilos flex para el contenedor principal del menú */
+.main-menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para el flex del logo */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    flex-grow: 1;
+}
+
+/* Estilos para la imagen del logo */
+.logo-img {
+    background-color: brown; /* Color de fondo del logo */
+    width: 212px; /* Ancho de la imagen del logo */
+    height: 60px; /* Altura de la imagen del logo */
+}
+
+/* Estilos flex para la sección de menú */
+.menu-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 9;
+}
+
+/* Estilos flex para la sección de opciones de menú */
+.menu-option {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: start;
+    flex-grow: 1;
+}
+
+/* Estilos flex para la subsección de opciones de menú */
+.menu-option-sub {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: start;
+}
+
+/* Estilos para el texto del menú */
+.menu-text {
+    color: white; /* Color del texto del menú */
+    padding: 1em; /* Espaciado del texto del menú */
+}
+
+/* Estilos flex para los botones del menú */
+.menu-button {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+    align-items: start;
+    flex-grow: 1;
+}
+
+/* Estilos para el texto de los botones del menú */
+.menu-button-text {
+    padding: 1em; /* Espaciado del texto de los botones del menú */
+}
+
+/* Media Query para pantallas con un ancho máximo de 627px */
+@media (max-width: 627px) {
+    .main-menu {
+        flex-flow: column; /* Cambia la dirección de flujo a columna */
+        align-items: stretch; /* Estira la alineación vertical */
+        flex-grow: 1;
+    }
+    .menu-section {
+        flex-grow: 9;
+    }
+    .menu-option-sub {
+        display: none !important; /* Oculta la subsección de opciones de menú */
+    }
+}
+
+/* Media Query para pantallas con un ancho entre 628px y 863px */
+@media (min-width: 628px) and (max-width: 863px) {
+    .menu-option {
+        justify-content: center; /* Centra horizontalmente las opciones de menú */
+    }
+}
+
+/* Media Query para pantallas con un ancho entre 871px y 1107px */
+@media (min-width: 871px) and (max-width: 1107px) {
+    .menu-section {
+        flex-grow: 1;
+    }
+    .logo-img {
+        background-color: rgb(88, 4, 4); /* Cambia el color de fondo de la imagen del logo */
+        height: 100px; /* Cambia la altura de la imagen del logo */
+    }
+    .main-menu {
+        flex-flow: row nowrap; /* Restablece la dirección de flujo a fila */
+        justify-content: space-between; /* Restablece la alineación horizontal */
+        align-items: center; /* Restablece la alineación vertical */
+        flex-grow: 1;
+    }
+    .menu-option {
+        justify-content: end; /* Centra horizontalmente las opciones de menú */
+    }
+}
+
+/* Media Query para pantallas con un ancho mínimo de 1108px */
+@media (min-width: 1108px) {
+    .main-menu {
+        flex-grow: 1;
+    }
+    .menu-section {
+        flex-grow: 9;
+    }
+    .menu-option {
+        justify-content: start; /* Alinea horizontalmente las opciones de menú a la izquierda */
+        align-items: start; /* Alinea verticalmente las opciones de menú en la parte superior */
+    }
+    .logo {
+        flex-grow: 0; /* Evita que el logotipo crezca */
+    }
+}
+
+
+/* FIN Menu_Cabecera FAB */
+
+/*--------------------------------------[ MENU FIN FAB ]---------------------------------------------*/
+
+
+/*--------------------------------------[ FOOTER INICIO FAB ]---------------------------------------------*/
+
+/* Estilos para el pie de página principal */
+.main-footer {
+    background-color: #5890FF; /* Color de fondo */
+    display: flex;
+    flex-flow: column nowrap; /* Dirección de flujo y alineación */
+    justify-content: stretch;
+    align-items: stretch;
+    color: white; /* Color del texto */
+}
+
+/* Estilos para la sección de enlaces en el pie de página */
+.footer-a-1 {
+    display: flex;
+    flex-flow: row wrap; /* Coloca elementos en fila y permite envolver si no caben */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: stretch;
+    padding: 2em; /* Espaciado interior */
+}
+
+/* Estilos para la sección de información en el pie de página */
+.footer-a-2 {
+    display: flex;
+    flex-flow: column nowrap; /* Dirección de flujo y alineación */
+    justify-content: stretch;
+    align-items: center; /* Centra vertical y horizontalmente */
+    padding: 1em;
+}
+
+/* Estilos para la sección de enlaces en la sección de información del pie de página */
+.footer-b-1 {
+    display: flex;
+    flex-flow: row wrap; /* Coloca elementos en fila y permite envolver si no caben */
+    justify-content: start; /* Inicio de la línea */
+    align-items: stretch;
+    flex-grow: 8; /* Ocupa más espacio */
+}
+
+/* Estilos para la sección de redes sociales en la sección de información del pie de página */
+.footer-b-2 {
+    display: flex;
+    flex-flow: column nowrap; /* Dirección de flujo y alineación */
+    justify-content: stretch;
+    align-items: stretch;
+    padding: 1em; /* Espaciado interior */
+    flex-grow: 1; /* Ocupa menos espacio */
+}
+
+/* Estilos para la primera columna de enlaces en la sección de enlaces */
+.footer-b-1-1, .footer-b-1-2, .footer-b-1-3 {
+    display: flex;
+    flex-flow: column nowrap; /* Dirección de flujo y alineación */
+    justify-content: stretch;
+    align-items: start; /* Inicio de la línea */
+    padding: 1em; /* Espaciado interior */
+    flex-grow: 1; /* Ocupa igual espacio */
+}
+
+/* Estilos para el título de redes sociales en la sección de información del pie de página */
+.footer-b-title-1 {
+    display: flex;
+    flex-flow: row wrap; /* Coloca elementos en fila y permite envolver si no caben */
+    justify-content: start; /* Inicio de la línea */
+    align-items: start; /* Inicio de la línea */
+    padding-bottom: 0em;
+    flex-grow: 1; /* Ocupa igual espacio */
+}
+
+/* Estilos para el contenedor de íconos de redes sociales */
+.footer-b-icon-cont {
+    display: flex;
+    flex-flow: row wrap; /* Coloca elementos en fila y permite envolver si no caben */
+    justify-content: start; /* Inicio de la línea */
+    align-items: start; /* Inicio de la línea */
+    flex-grow: 1; /* Ocupa igual espacio */
+    max-width: 230px; /* Ancho máximo */
+}
+
+/* Estilos para los íconos de redes sociales */
+.footer-icon-1 {
+    height: 30px;
+    width: 30px;
+    background-color: white; /* Color de fondo */
+    border-radius: 15px; /* Borde redondeado */
+    margin: 0.3em; /* Margen entre íconos */
+}
+
+/* -------- Inicio Footer Media------- */
+
+
+/* Media Query para pantallas con un ancho máximo de 627px */
+@media (max-width: 627px) {
+    /* Centro verticalmente los elementos dentro de .footer-b-2 */
+    .footer-b-2 {
+        align-items: center;
+    }
+
+    /* Deshabilita el ancho máximo en .footer-b-icon-cont */
+    .footer-b-icon-cont {
+        max-width: none;
+    }
+
+    /* Centra horizontal y verticalmente los elementos en .footer-b-1-1, .footer-b-1-2 y .footer-b-1-3 */
+    .footer-b-1-1, .footer-b-1-2, .footer-b-1-3 {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Media Query para pantallas con un ancho entre 628px y 886px */
+@media (min-width: 628px) and (max-width: 886px) {
+    /* Centro verticalmente los elementos dentro de .footer-b-2 */
+    .footer-b-2 {
+        align-items: center;
+    }
+
+    /* Deshabilita el ancho máximo en .footer-b-icon-cont */
+    .footer-b-icon-cont {
+        max-width: none;
+    }
+
+    /* Centra horizontal y verticalmente los elementos en .footer-b-1-1, .footer-b-1-2 y .footer-b-1-3 */
+    .footer-b-1-1, .footer-b-1-2, .footer-b-1-3 {
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Estira los elementos horizontal y verticalmente en .footer-b-1 */
+    .footer-b-1 {
+        justify-content: stretch;
+        align-items: stretch;
+    }
+}
+
+/* Media Query para pantallas con un ancho entre 887px y 991px */
+@media (min-width: 887px) and (max-width: 991px) {
+    /* Centro verticalmente los elementos dentro de .footer-b-2 */
+    .footer-b-2 {
+        align-items: center;
+    }
+
+    /* Deshabilita el ancho máximo en .footer-b-icon-cont */
+    .footer-b-icon-cont {
+        max-width: none;
+    }
+}
+
+/* Media Query para pantallas con un ancho entre 992px y 1148px */
+@media (min-width: 992px) and (max-width: 1148px) {
+    /* Centro verticalmente los elementos dentro de .footer-b-2 */
+    .footer-b-2 {
+        align-items: center;
+    }
+
+    /* Deshabilita el ancho máximo en .footer-b-icon-cont */
+    .footer-b-icon-cont {
+        max-width: none;
+    }
+}
+
+/* -------- Fin Footer Media------- */
+
+/*--------------------------------------[ FOOTER FIN FAB ]---------------------------------------------*/
+
