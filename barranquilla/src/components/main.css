@@ -1,41 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-
-
 /* Inicio - Globales */
 
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: black;
-  }
-  
-  .seccion-body {
-    flex-grow: 1; /* Ocupa el espacio restante */
-    margin-bottom: 60px; /* Ajusta esto al alto de tu footer */
-  }
-
-  /* Establece el contenedor principal para ocupar toda la altura de la ventana */
-  .main-app {
-    min-height: 100vh;
+    background-color: #131313;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;    
+}  
+.main-app {
     display: flex;
     flex-direction: column;
-    position: relative; /* Permite que el footer se ajuste a la parte inferior de este contenedor */
-
-}
-
-/* Configura el footer como posición absoluta en la parte inferior */
+    min-height: 100vh;
+}  
+.seccion-body {
+    /* Estilos adicionales para la sección del cuerpo si es necesario */
+    flex: 1; /* Esto permite que el cuerpo ocupe el espacio restante */
+}  
 .seccion-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
- 
-
-
+    /* Estilos adicionales para la sección del pie de página si es necesario */
+    flex-shrink: 0;
+}  
 .text-center {
     text-align: center;
 }
@@ -50,6 +38,7 @@ html, body {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    padding: 0.5em;    
 }
 
 /* Estilos para el flex del logo */
@@ -57,15 +46,14 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1em;
+    padding-right: 2em;
     flex-grow: 1;
 }
 
 /* Estilos para la imagen del logo */
-.logo-img {
-    background-color: brown; /* Color de fondo del logo */
+.logo-img { /* Color de fondo del logo */
     width: 212px; /* Ancho de la imagen del logo */
-    height: 60px; /* Altura de la imagen del logo */
+    height: 54px; /* Altura de la imagen del logo */
 }
 
 /* Estilos flex para la sección de menú */
@@ -84,14 +72,20 @@ html, body {
     justify-content: start;
     align-items: start;
     flex-grow: 1;
+    background: #2A2A2A;
+    padding-right: 20px;
+    height: 44px;
+    border-radius: 22px;
 }
 
 /* Estilos flex para la subsección de opciones de menú */
 .menu-option-sub {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: start;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    flex-grow: 1;
 }
 
 /* Estilos para el texto del menú */
@@ -106,20 +100,27 @@ html, body {
     flex-flow: row nowrap;
     justify-content: end;
     align-items: start;
-    flex-grow: 1;
+    flex-grow: 12;
 }
 
 /* Estilos para el texto de los botones del menú */
 .menu-button-text {
-    padding: 1em; /* Espaciado del texto de los botones del menú */
+    padding: 0.2em; /* Espaciado del texto de los botones del menú */
 }
 
 /* Media Query para pantallas con un ancho máximo de 627px */
 @media (max-width: 627px) {
+    .logo {
+        padding: 1em;
+    }
     .main-menu {
         flex-flow: column; /* Cambia la dirección de flujo a columna */
         align-items: stretch; /* Estira la alineación vertical */
         flex-grow: 1;
+    }
+    .menu-option {
+        background: none;
+        padding-right: 0px;
     }
     .menu-section {
         flex-grow: 9;
@@ -131,15 +132,22 @@ html, body {
 
 /* Media Query para pantallas con un ancho entre 628px y 863px */
 @media (min-width: 628px) and (max-width: 863px) {
+    .logo {
+        padding: 1em;
+    }
     .menu-option {
-        justify-content: center; /* Centra horizontalmente las opciones de menú */
+        justify-content: center; /* Centra horizontalmente las opciones de menú */  
     }
 }
 
 /* Media Query para pantallas con un ancho entre 871px y 1107px */
-@media (min-width: 871px) and (max-width: 1107px) {
+@media (min-width: 864px) and (max-width: 1092px) {
     .menu-section {
         flex-grow: 1;
+    }
+    .logo {
+        padding: 1em;
+        padding-right: 2em;
     }
     .logo-img {
         background-color: rgb(88, 4, 4); /* Cambia el color de fondo de la imagen del logo */
@@ -152,12 +160,13 @@ html, body {
         flex-grow: 1;
     }
     .menu-option {
+        margin-bottom: 0.5em;
         justify-content: end; /* Centra horizontalmente las opciones de menú */
     }
 }
 
 /* Media Query para pantallas con un ancho mínimo de 1108px */
-@media (min-width: 1108px) {
+@media (min-width: 1093px) {
     .main-menu {
         flex-grow: 1;
     }
@@ -178,6 +187,373 @@ html, body {
 
 /*--------------------------------------[ MENU FIN FAB ]---------------------------------------------*/
 
+/*--------------------------------------[ BODY INICIO FAB ]---------------------------------------------*/
+
+/* Estilos para el pie de página principal */
+.body-main {
+    display: flex;
+    flex-flow: column nowrap; /* Dirección de flujo y alineación */
+    justify-content: stretch;
+    align-items: stretch;
+    color: white; /* Color del texto */
+    padding-top: 2em;
+}
+
+.body-width{
+    display: flex;
+    flex-flow: column nowrap;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+/* Slider INICIO*/
+
+.slider-icon-left{
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.slider-icon-right{
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.slider-main {
+    display: flex;
+    flex-flow: row nowrap; /* Dirección de flujo y alineación */
+    justify-content: stretch;
+    align-items: stretch;
+    flex-grow: 1;
+}
+
+.slider-seccion-1 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.slider-text-title-1 {
+    font-size: 17px;
+    margin-bottom: 1em;
+    max-width: 280px;
+}
+
+.slider-text-1 {
+    font-size: 36px;
+    line-height: 1.2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-weight: 600;
+    max-width: 480px;
+}
+
+.slider-seccion-2 {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.slider-main-boton-action{
+    margin: 1em;
+}
+
+.slider-img {
+    width: 80%;
+}
+
+.slider-selection{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.slider-selection-button {
+    margin: 0.2em;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 13px;
+}
+
+
+@media (max-width: 627px) {
+    .slider-seccion-2 {
+        display: none;
+    }
+    .slider-icon-left{
+        display: none;
+    }
+    .slider-icon-right{
+        display: none;
+    }
+    .slider-text-title-1 {
+        max-width: none;
+        text-align: center;
+    }
+    .slider-text-1 {
+        max-width: none;
+        text-align: center;
+    }
+
+    .slider-main-boton-action{
+        text-align: center;
+    }
+
+    .slider-selection{
+        display: none;
+    }
+}
+
+/* Media Query para pantallas con un ancho entre 628px y 863px */
+@media (max-width: 863px) {
+    .slider-icon-left{
+        display: none;
+    }
+    .slider-icon-right{
+        display: none;
+    }
+    .slider-main {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    .slider-seccion-2 {
+        display: none;
+    }
+
+    .slider-text-title-1 {
+        max-width: none;
+        text-align: center;
+    }
+    .slider-text-1 {
+        max-width: none;
+        text-align: center;
+    }
+
+    .slider-main-boton-action{
+        text-align: center;
+    }
+
+    .slider-selection{
+        display: none;
+    }
+
+}
+
+/* Media Query para pantallas con un ancho entre 871px y 1107px */
+@media (min-width: 864px) and (max-width: 1092px) {
+
+    .slider-icon-left{
+        display: none;
+    }
+    .slider-icon-right{
+        display: none;
+    }
+    .slider-main {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
+/* Media Query para pantallas con un ancho mínimo de 1108px */
+@media (min-width: 1093px) {
+    
+}
+
+
+/* Slider FIN */
+
+/* Sección 2 (SeccionDatos) Inicio*/
+
+.seccion-datos-main {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-flow: row wrap;
+}
+.seccion-section-1 {
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    flex-grow: 11;
+    margin-right: 2em;
+}
+.seccion-section-2 {
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    flex-grow: 1;
+    width: 400px;
+}
+
+@media (max-width: 1092px) {
+
+    .seccion-datos-main {
+        display: none;
+    }
+
+}
+
+/* Sección 2 - dos cards  Fin*/
+
+/* Sección 2-2 (SeccionDatos2) Inicio*/
+
+.seccion-datos-main-2 {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-flow: row wrap;
+}
+.seccion-section-2-1 {
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    flex-grow: 11;
+    margin-right: 2em;
+}
+.seccion-section-2-2 {
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    flex-grow: 1;
+    max-width: 400px;
+}
+
+@media (max-width: 1092px) {
+
+    .seccion-datos-main-2 {
+        display: none;
+    }
+
+}
+
+/* Sección 2 - dos cards  Fin*/
+
+/* Register Inicio */
+
+.register-main{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.register-text-title-1 {
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom: 0.2em;
+}
+
+.register-text-1 {
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 600px;
+    padding-bottom: 2em;
+}
+
+@media (max-width: 863px) {
+   
+    .register-text-1 {
+        text-align: center;
+        max-width: none;
+    }
+    .register-text-title-1{
+        text-align: center;
+    }
+}
+
+/* Register Fin */
+
+/* GameTrends - 360 Inicio*/
+
+.gametrends-main{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.gametrends-section-1 {
+    font-size: 32px;
+    font-weight: 600;
+    max-width: 600px;
+    line-height: 40px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.gametrends-section-main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+    flex-grow: 1;
+}
+
+.gametrends-section-2{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: stretch;
+    margin-bottom: 2em;
+}
+
+.gametrends-col-1 {
+    flex-grow: 1;
+    margin-right: 2em;
+}
+
+.gametrends-col-2 {
+    flex-grow: 1;
+}
+
+.gametrends-section-3{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: stretch;
+}
+
+.gametrends-col-3 {
+    flex-grow: 1;    
+}
+
+.gametrends-col-4 {
+    flex-grow: 1;
+    margin-left: 2em;
+}
+
+
+/* Media Query para pantallas con un ancho entre 992px y 1148px */
+@media (max-width: 1280px) {
+    .gametrends-section-2{
+        flex-flow: column nowrap;
+    }
+    .gametrends-section-3{
+        flex-flow: column nowrap;
+    }
+
+    .gametrends-col-1 {
+        flex-grow: 1;
+        margin-right: 0em;
+        margin-bottom: 2em;
+    }
+
+    .gametrends-col-3 {
+        flex-grow: 1;
+        margin-bottom: 2em;
+    }
+
+    .gametrends-col-4 {
+        flex-grow: 1;
+        margin-left: 0em;
+    }
+}
+
+/* GameTrends - 360   Fin*/
+
+/*--------------------------------------[ BODY FIN FAB ]---------------------------------------------*/
+
+
 
 /*--------------------------------------[ FOOTER INICIO FAB ]---------------------------------------------*/
 
@@ -187,8 +563,39 @@ html, body {
     display: flex;
     flex-flow: column nowrap; /* Dirección de flujo y alineación */
     justify-content: stretch;
-    align-items: stretch;
+    align-items: center;
     color: white; /* Color del texto */
+}
+
+.footer-logo-img { /* Color de fondo del logo */
+    width: 212px; /* Ancho de la imagen del logo */
+    height: 104px; /* Altura de la imagen del logo */
+}
+
+.footer-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 0.8em;
+}
+
+.footer-info{
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 2.5em;
+}
+
+/* Estilos para la imagen del logo */
+.footer-logo-main { /* Color de fondo del logo */
+    width: 212px; /* Ancho de la imagen del logo */
+    height: 54px; /* Altura de la imagen del logo */
+}
+
+.footer-logo-img{
+    width: 105px;
+    height: 26px;
+    padding: 1em;
 }
 
 /* Estilos para la sección de enlaces en el pie de página */
@@ -196,8 +603,9 @@ html, body {
     display: flex;
     flex-flow: row wrap; /* Coloca elementos en fila y permite envolver si no caben */
     justify-content: center; /* Centra horizontalmente */
-    align-items: stretch;
+    align-items: start;
     padding: 2em; /* Espaciado interior */
+    width: 80%;
 }
 
 /* Estilos para la sección de información en el pie de página */
@@ -224,8 +632,8 @@ html, body {
     flex-flow: column nowrap; /* Dirección de flujo y alineación */
     justify-content: stretch;
     align-items: stretch;
-    padding: 1em; /* Espaciado interior */
     flex-grow: 1; /* Ocupa menos espacio */
+    padding-top: 1em;
 }
 
 /* Estilos para la primera columna de enlaces en la sección de enlaces */
@@ -235,16 +643,6 @@ html, body {
     justify-content: stretch;
     align-items: start; /* Inicio de la línea */
     padding: 1em; /* Espaciado interior */
-    flex-grow: 1; /* Ocupa igual espacio */
-}
-
-/* Estilos para el título de redes sociales en la sección de información del pie de página */
-.footer-b-title-1 {
-    display: flex;
-    flex-flow: row wrap; /* Coloca elementos en fila y permite envolver si no caben */
-    justify-content: start; /* Inicio de la línea */
-    align-items: start; /* Inicio de la línea */
-    padding-bottom: 0em;
     flex-grow: 1; /* Ocupa igual espacio */
 }
 
@@ -262,9 +660,13 @@ html, body {
 .footer-icon-1 {
     height: 30px;
     width: 30px;
-    background-color: white; /* Color de fondo */
     border-radius: 15px; /* Borde redondeado */
     margin: 0.3em; /* Margen entre íconos */
+}
+
+.footer-info-end{
+    text-align: center;
+    padding-top: 1em;
 }
 
 /* -------- Inicio Footer Media------- */
@@ -284,7 +686,7 @@ html, body {
 
     /* Centra horizontal y verticalmente los elementos en .footer-b-1-1, .footer-b-1-2 y .footer-b-1-3 */
     .footer-b-1-1, .footer-b-1-2, .footer-b-1-3 {
-        justify-content: center;
+        justify-content: start;
         align-items: center;
     }
 }
@@ -303,7 +705,11 @@ html, body {
 
     /* Centra horizontal y verticalmente los elementos en .footer-b-1-1, .footer-b-1-2 y .footer-b-1-3 */
     .footer-b-1-1, .footer-b-1-2, .footer-b-1-3 {
-        justify-content: center;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .footer-b-2 {
         align-items: center;
     }
 
@@ -312,35 +718,734 @@ html, body {
         justify-content: stretch;
         align-items: stretch;
     }
+
+    .footer-a-1 {
+        width: 90%;
+    }
 }
 
 /* Media Query para pantallas con un ancho entre 887px y 991px */
-@media (min-width: 887px) and (max-width: 991px) {
+@media (min-width: 887px) and (max-width: 1004px) {
     /* Centro verticalmente los elementos dentro de .footer-b-2 */
     .footer-b-2 {
         align-items: center;
     }
 
+    .footer-b-1-1, .footer-b-1-2, .footer-b-1-3 {
+        justify-content: start;
+        align-items: center;
+    }
+    
     /* Deshabilita el ancho máximo en .footer-b-icon-cont */
     .footer-b-icon-cont {
         max-width: none;
+    }
+
+    .footer-a-1 {
+        width: 90%;
     }
 }
 
 /* Media Query para pantallas con un ancho entre 992px y 1148px */
-@media (min-width: 992px) and (max-width: 1148px) {
+@media (min-width: 1005px) and (max-width: 1148px) {
     /* Centro verticalmente los elementos dentro de .footer-b-2 */
     .footer-b-2 {
-        align-items: center;
+        align-items: start;
+        max-width: 230px; /* Ancho máximo */
     }
 
     /* Deshabilita el ancho máximo en .footer-b-icon-cont */
     .footer-b-icon-cont {
         max-width: none;
+        
+    }
+
+    /* Estilos para la sección de enlaces en el pie de página */
+    .footer-a-1 {
+        width: 90%;
     }
 }
 
 /* -------- Fin Footer Media------- */
 
 /*--------------------------------------[ FOOTER FIN FAB ]---------------------------------------------*/
+
+/*------------------------------------[ Componentes ]----------------------------------------------------------*/
+
+/*---- BotonLogin Inicio ----*/
+
+.boton-login {
+    height: 40px;
+    width: 110px;
+    background: none;
+    color: white;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;    
+}
+
+.boton-login:hover {
+    background: #6E00FF;
+    color: white;
+    border: 2px solid #00FFEE;
+    border-radius: 24px;
+    font-style: italic; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;    
+}
+
+/*---- BotonLogin Fin ----*/
+
+/*---- BotonRegister Inicio ----*/
+
+.boton-register {
+    height: 40px;
+    width: 156px;
+    background: #6E00FF;
+    color: white;
+    border: 2px solid #00FFEE;
+    border-radius: 24px;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;    
+}
+
+.boton-register:hover {
+    font-style: normal;
+    background: none;
+    color: white;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;    
+}
+
+/*---- BotonRegister Fin ----*/
+
+/*---- BotonRegister Inicio ----*/
+
+.boton-hamburger {
+    height: 44px;
+    width: 44px;
+    background: #6E00FF;
+    color: white;
+    border: 2px solid #00FFEE;
+    border-radius: 24px;
+}
+
+/*---- BotonRegister Fin ----*/
+
+/*---- BotonRegister Inicio ----*/
+
+.boton-action {
+    background-color: #5890FF;
+    width: 320px;
+    height: 54px;
+    border-radius: 27px;
+    border: none;
+    font-size: 18px;
+    color: white;
+    font-style: italic;
+}
+
+/*---- BotonRegister Fin ----*/
+
+/*---- BotonRegister2 Inicio ----*/
+
+.boton-register-2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    align-items: center;
+    padding-left: 2em;
+    height: 78px;
+    width: 100%;
+    background: #5890FF;
+    color: white;
+    border: none;
+    border-radius: 39px;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;    
+    flex-grow: 1;
+}
+
+.boton-register-title-1 {
+    font-size: 21px;
+}
+
+.boton-register-seccion-1 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding-right: 2em;
+}
+
+.boton-register-action {
+    background-color: #A0FD43;
+    width: 70px;
+    height: 70px;
+    border-radius: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton-register-action-1 {
+    background-color: #FFFFFF;
+    color: black;
+    width: 48px;
+    height: 48px;
+    border-radius: 39px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 12px #00000054;
+}
+
+.boton-register-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 696px) {
+
+    
+    .boton-register-2 {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content:center;
+        align-items: center;
+    }
+    .boton-register-seccion-1 {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .boton-register-2 {
+        padding-left: 2em;
+        height: 187px;
+        padding-bottom: 1em;
+    }
+}
+
+@media (min-width: 697px) and (max-width: 863px) {
+
+    .boton-register-seccion-1 {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: start;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+
+    .boton-register-title-1{
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+
+    .boton-register-2 {
+        padding-left: 2em;
+        height: 119px;
+    }
+
+    .boton-register-2{
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        padding-top: 0.4em;
+    }
+
+}
+
+
+/*---- BotonRegister2 Fin ----*/
+
+/*------- gt-seccion-main-1 Inicio --------*/
+
+.gt-seccion-datos-1-main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    justify-content: stretch;
+    background-color: #343434;
+    border-radius: 28px;
+    flex-grow: 1;
+    padding: 1em;
+}
+
+.gt-seccion-datos-col-1 {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    justify-content: stretch;
+    padding-left: 0.5em;
+    padding-bottom: 1em;
+}
+
+.gt-seccion-datos-title {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.gt-seccion-datos-text {
+    font-size: 16px;
+    font-style: italic;
+    color: #D8BBFF;
+}
+
+.gt-seccion-datos-subcol-1 {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: start;
+    justify-content: space-between;
+    flex-grow: 11;
+}
+.gt-seccion-datos-subcol-2 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: start;
+    justify-content: start;
+    flex-grow: 1;
+    color: #95EDFF;
+    font-size: 14px;
+    font-style: italic;
+    padding-top: 0.2em;
+}
+
+.gt-seccion-datos-icon{
+    width: 14px;
+    height: 14px;
+    padding-left: 1em;
+    padding-bottom: 0.1em;
+}
+
+.gt-seccion-datos-column-2 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+    align-items: stretch;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.gt-seccion-datos-row-2 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: stretch;
+    align-items: stretch;
+    flex-grow: 1;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.gt-seccion-datos-section-1 {
+    padding-left: 1em;
+    flex-grow: 1;
+}
+.gt-seccion-datos-section-2 {
+    padding-left: 1em;
+    flex-grow: 1;
+}
+.gt-seccion-datos-section-3 {
+    padding-left: 1em;
+    flex-grow: 3;
+}
+.gt-seccion-datos-section-4 {
+    padding-left: 1em;
+    flex-grow: 3;
+}
+.gt-seccion-datos-section-5 {
+    padding-left: 1em;
+    flex-grow: 3;
+}
+
+
+/*------- gt-seccion-main-1 Fin --------*/
+
+/*------- gt-seccion-main-2 Inicio --------*/
+
+.gt-seccion-datos-2-main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    justify-content: stretch;
+    flex-grow: 1;
+}
+
+.gt-seccion-datos-2-col-1 {
+    border-radius: 28px;
+    flex-grow: 1;
+}
+
+.gt-seccion-datos-2-col-2 {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    justify-content: center;
+    background-color: #343434;
+    border-radius: 28px;
+    flex-grow: 2;
+}
+
+.gt-seccion-datos-2-title {
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.gt-seccion-datos-2-text {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.gt-seccion-datos-2-button{
+    text-align: center;
+}
+
+/*------- gt-seccion-main-2 Fin --------*/
+
+/*------- gt-seccion-main-1-1 Inicio --------*/
+
+.gt-seccion-datos-2-1-main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    justify-content: stretch;
+    background-color: #343434;
+    border-radius: 28px;
+    flex-grow: 1;
+    padding: 1em;
+}
+
+.gt-seccion-datos-title-2 {
+    font-size: 32px;
+    max-width: 580px;
+}
+
+
+/*------- gt-seccion-main-1-1 Fin --------*/
+
+/*------- gt-seccion-main-2-1 Inicio --------*/
+
+.gt-seccion-datos-2-2-main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    justify-content: stretch;
+    background-color: #343434;
+    border-radius: 28px;
+    flex-grow: 1;
+    padding: 1em;
+    width: 338px;
+    height: 422px;
+}
+
+.gt-seccion-datos-2-2-col-1 {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: end;
+    justify-content: stretch;
+    border-radius: 28px;
+    flex-grow: 1;
+    padding: 0em 1em 0em 0em;
+}
+
+.gt-seccion-datos-title-2 {
+    font-size: 32px;
+    max-width: 574px;
+}
+
+.gt-seccion-datos-2-title-1 {
+    font-size: 32px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.gt-seccion-datos-2-1-text{
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: end;
+    max-width: 200px;
+}
+
+/*------- gt-seccion-main-2-1 Fin --------*/
+
+
+/* Estilos para GTComponentGameTrends1 */
+.gt-component1-main-container {
+    display: flex;
+    flex-direction: row;
+    height: 310px; /* Ajusta la altura según sea necesario */
+    border-radius: 28px;
+    background-color: white;
+    align-items: center;
+    overflow: hidden;
+}
+
+.gt-component1-logo-container {
+    flex-grow: 3;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 28px;
+    margin: 10px;
+}
+
+.gt-component1-logo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 28px;
+}
+
+.gt-component1-text-container {
+    flex-grow: 1;
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+.gt-component1-sub-text {
+    color: black;
+    font-size: 28px; /* Ajusta el tamaño del texto según sea necesario */
+    margin-bottom: 10px;
+}
+
+.gt-component1-emphasis {
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+}
+
+.gt-component1-description-text {
+    font-size: 18px; /* Ajusta el tamaño del texto según sea necesario */
+    color: black;
+}
+
+@media (max-width: 674px) {
+    .gt-component1-description-text {
+        display: none;
+    }
+    .gt-component1-logo-container img{
+        display: none;
+    }
+}
+
+
+
+/* Estilos para GTComponentGameTrends2 */
+.gt-component2-main-container {
+    text-align: center;
+    position: relative;
+    height: 310px;
+    min-width: 600px;
+    border-radius: 28px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gt-component2-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 28px;
+}
+
+.gt-component2-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 18px;
+    margin-left: 10px;
+    text-align: left;
+    font-weight: normal;
+}
+
+
+@media (max-width: 1280px) {
+    .gt-component2-main-container {
+        min-width: 0px;
+    }
+}
+
+
+/*------------------------------------------- Inicio Login FAB --------------------------------------------*/
+
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-container {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: stretch;
+    align-items: stretch;
+    border: 1px solid #707070;
+    border-radius: 28px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 458px;
+    width: 894px;
+    overflow: hidden;
+}
+
+.login-section-form {
+    position: relative;
+    display: flex;  
+    flex-flow: column nowrap;
+    align-items: stretch;
+    justify-content: stretch;
+    max-height: 700px;
+    max-width: 569px;
+    z-index: 1;
+    flex: 1; 
+    border-radius: 28px;
+    background-color: rgba(0, 0, 0, 0.897);
+}
+
+
+.login-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0; /* Ajusta el valor de z-index según tus necesidades */
+    border-radius: 28px;
+}
+
+
+
+/* Resto del código CSS */
+
+
+/* Resto del código CSS */
+
+  
+
+  .headline {
+    margin: 1em;
+    max-width: 440px;
+    font-size: 22px;
+    margin-bottom: 1.4em;
+    color: white;
+  }
+
+  .login-form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-group {
+    flex-grow: 1;
+  }
+  
+  .login-input {
+    margin: 1em;
+    background-color: #000000;
+    border: 1px solid #343434;
+    border-radius: 5px;
+    color: white;
+    width: 400px;
+    height: 54px;
+  }
+  
+  .forgot-password-text{
+    padding: 1em;
+    color: #ffffff;
+    font-weight: 300;
+  }
+
+  .forgot-password {    
+    margin-left: 10px;
+    color: #ffffff;
+    font-weight: 600;
+  }
+  
+  .login-button {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-bottom: 2em;
+    background-color: #5890FF;
+    border-radius: 26px;
+    width: 400px;
+    height: 52px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .login-button:hover {
+    background-color: #5890FF;
+    border-radius: 26px;
+  }
+  
+
+
+@media (max-width: 627px) {
+
+    .login-container {
+        height: auto;
+    }
+
+    .login-section-form {
+        height: auto;
+    }
+      
+    .login-button {
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 26px;
+        width: 240px;
+        height: auto;
+        padding: 1em;
+    }
+  
+    .login-input {
+        width: 280px;
+        height: 54px;
+        flex-grow: 1;
+      }
+
+    .headline {
+        text-align: center;
+    }
+     
+    .login-btn-action {
+        margin-top: 1em;
+    }
+}
+
+/*------------------------------------------- FIN Login FAB --------------------------------------------*/
+
 
