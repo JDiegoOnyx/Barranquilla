@@ -15,36 +15,36 @@ function Body() {
           <Slider/>
         </div>
         <div className='body-width'>
-        <div>
-          <SeccionDatos/>
-        </div>
-        <div>
-          <Register/>
-        </div>
-        <div>
-          <SeccionDatos2/>
-        </div>
-        <div>
-          <GameTrends/>
-        </div>
-        <div>
-          Sección 6
-        </div>
-        <div>
-          Sección 7
-        </div>
-        <div>
-          Sección 8
-        </div>
-        <div>
-          <GTSeccionDatos1/>
-        </div>
-        <div>
-          Sección 10
-        </div>
-        <div>
-          <BotonRegister2/>
-        </div>
+          <div>
+            <SeccionDatos/>
+          </div>
+          <div>
+            <Register/>
+          </div>
+          <div>
+            <SeccionDatos2/>
+          </div>
+          <div>
+            <GameTrends/>
+          </div>
+          <div>
+            Sección 6
+          </div>
+          <div>
+            Sección 7
+          </div>
+          <div>
+            Sección 8
+          </div>
+          <div>
+            <GTSeccionDatos1/>
+          </div>
+          <div>
+            Sección 10
+          </div>
+          <div>
+            <BotonRegister2/>
+          </div>
         </div>
         
     </div>
