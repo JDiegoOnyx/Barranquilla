@@ -19,6 +19,7 @@ html, body {
 .seccion-body {
     /* Estilos adicionales para la sección del cuerpo si es necesario */
     flex: 1; /* Esto permite que el cuerpo ocupe el espacio restante */
+    /* Body.css */
 }  
 .seccion-footer {
     /* Estilos adicionales para la sección del pie de página si es necesario */
@@ -204,6 +205,9 @@ html, body {
     flex-flow: column nowrap;
     padding-left: 3em;
     padding-right: 3em;
+    
+    width: 70%;
+    margin: 0 auto;  
 }
 
 /* Slider INICIO*/
