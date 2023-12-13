@@ -6,7 +6,10 @@ import SeccionDatos2 from '../SeccionDatos2/SeccionDatos2';
 import Slider from '../Slider/Slider';
 import GTSeccionDatos1 from '../GTSeccionDatos/GTSeccionDatos1';
 import BotonRegister2 from '../BotonRegister2/BotonRegister2';
-import LoginForm from '../LoginForm/LoginForm';
+import Noticias from '../Noticias/Noticias';
+import Tendencias from '../Tendencias/Tendencias';
+import CallAction from '../CallAction/CallAction';
+import Register2 from '../Register2/Register2';
 
 function Body() {
   return (
@@ -28,22 +31,25 @@ function Body() {
             <GameTrends/>
           </div>
           <div>
-            Sección 6
+            <Noticias/>
           </div>
           <div>
-            Sección 7
+            <Tendencias/>
           </div>
           <div>
-            Sección 8
+            <CallAction/>
           </div>
           <div>
+            Sección 9
+          </div>
+          <div className='seccion-angosta'>
             <GTSeccionDatos1/>
           </div>
           <div>
             Sección 10
           </div>
           <div>
-            <BotonRegister2/>
+            <Register2/>
           </div>
         </div>
         

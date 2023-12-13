@@ -2,10 +2,10 @@ import React from 'react'
 import '../../components/main.css'
 import FlechaPNG from '../../assets/img/flecha.png';
 
-function BotonRegister2() {
+function BotonRegisterBlanco() {
   return (
     <div>
-        <button className='boton-register-2'>
+        <button className='boton-register-blanco'>
             <div className='boton-register-seccion-1'>
                 <div className='boton-register-title-1'>
                     Regístrate aquí con tu email
@@ -27,4 +27,4 @@ function BotonRegister2() {
   )
 }
 
-export default BotonRegister2
+export default BotonRegisterBlanco
