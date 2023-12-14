@@ -10,6 +10,8 @@ import Noticias from '../Noticias/Noticias';
 import Tendencias from '../Tendencias/Tendencias';
 import CallAction from '../CallAction/CallAction';
 import Register2 from '../Register2/Register2';
+import Informativo from '../SeccionInformativo/Informativo';
+import Ranking from '../Ranking/Ranking';
 
 function Body() {
   return (
@@ -40,13 +42,13 @@ function Body() {
             <CallAction/>
           </div>
           <div>
-            Sección 9
+            <Ranking/>
           </div>
           <div className='seccion-angosta'>
             <GTSeccionDatos1/>
           </div>
           <div>
-            Sección 10
+            <Informativo/>
           </div>
           <div>
             <Register2/>
