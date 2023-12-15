@@ -1,7 +1,8 @@
-import './App.css';
+import './components/main.css'
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Body from './components/Body/Body';
+import MenuVertical from './components/MenuVertical/MenuVertical';
 //import LoginForm from './components/LoginForm/LoginForm';
 
 function App() {
@@ -11,7 +12,12 @@ function App() {
         <Header/>
       </div>
       <div className='seccion-body'>
-        <Body/>
+        <div className='seccion-menu-vertical'>
+          <MenuVertical/>
+        </div>
+        <div>
+          <Body/>
+        </div>
       </div>
       <div className='seccion-footer'>
         <Footer/>

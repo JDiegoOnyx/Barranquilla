@@ -2023,6 +2023,117 @@ display: none;
 
 /*------------------------------------------- FIN Login FAB --------------------------------------------*/
 
+/* ----------------------------- INICIO MENU VERTICAL ---------------------------------- */
+
+.seccion-body {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.seccion-menu-vertical {
+    background: #343434;
+    color: #fff;
+    min-width: 300px;
+}
+
+.Menu-vertical-user {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.menu-vertical-img-fondo-tamano {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 148px;
+    width: 148px;
+    border-radius: 74px;
+    background: #2D2D2D;
+    margin-bottom: 18px;
+}
+
+.menu-vertical-img-tamano {
+    height: 123px;
+    width: 123px;
+    object-fit: cover;
+    border-radius: 62px;
+}
+
+.menu-vertical-titulo-1 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+.menu-vertical-titulo-2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    padding-bottom: 6px;
+    padding-bottom: 6px;
+}
+.menu-vertical-titulo-3 {
+    font-size: 12px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+
+
+.menu-vertical-ul {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: left;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-vertical-li {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    cursor: pointer;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    height: 45px;
+    padding-left: 10px;
+  }
+  
+  .menu-vertical-li:hover {
+    background-color: #34495e;
+  }
+
+  .menu-vertical-icon {
+
+  }
+
+  .menu-vertical-principal-cuadro {
+    position: absolute;
+    left: 250px;
+    width: 30px;
+    height: 31px;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    background: #CBA4FF 0% 0% no-repeat padding-box;
+    border: 2px solid #00FFEE;
+    opacity: 1;
+  }
+
+  .menu-vertical-principal {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 256px;
+    background: #6E00FF;
+    border: 2px #00FFEE solid;
+    border-left: none;
+  }
+
+/* ----------------------------- FIN MENU VERTICAL ---------------------------------- */
 
 /* ---- Inicio test ----*/
 
