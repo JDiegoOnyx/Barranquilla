@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../../components/main.css'
 import llamadoAction from '../../assets/img/llamadoAction.png';
 import BotonAction from '../BotonAction/BotonAction';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-import { Autoplay } from 'swiper/modules';
+import { Autoplay} from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -13,23 +13,50 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 function Slider() {
+    const [shouldChangeSlide, setShouldChangeSlide] = useState(false);
+
+  const handleSlideChangeTransitionEnd = (swiper) => {
+    if (swiper.isEnd && shouldChangeSlide) {
+      swiper.slideTo(0);
+      setShouldChangeSlide(false); // Reiniciar el estado después del cambio
+    }
+  };
+
+  const handleNavigationClick = () => {
+    // Lógica específica al hacer clic en el botón de navegación del swiper
+    console.log('Botón de navegación clickeado');
+    setShouldChangeSlide(true); // Habilitar el cambio de slide al hacer clic en el botón de navegación
+  };
+    
+  
   return (
     <div>
         <Swiper
-      modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
-      spaceBetween={50}
-      slidesPerView={3}
-      autoplay={{ delay: 3000 }} // Configurar el autoplay
-      navigation
-      pagination={{ clickable: true }}
+       
+            modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
+            loop={true}
+            spaceBetween={50}
+            slidesPerView={3}
+            autoplay={{ delay: 3000 }}
+            pagination={{ clickable: true }}
+            navigation
+        on={{
+          slideChange: (swiper) => {
+            this.activeIndex = swiper.realIndex;
+          },
+          touchEnd: (swiper) => {
+            this.activeIndex = swiper.realIndex;
+          },
+        }}
+    
     
     >
-        <div style={"margin:200px"}>
+       
 
       <SwiperSlide >
         <img src='https://img.freepik.com/vector-gratis/consola-juegos-letras-letrero-neon-fondo-ladrillo_1262-11854.jpg' loading='lazy' alt='Slide 1'/>
       </SwiperSlide>
-        </div>
+
       <SwiperSlide>
       <img src='https://img.freepik.com/vector-gratis/consola-juegos-letras-letrero-neon-fondo-ladrillo_1262-11854.jpg'loading='lazy' alt='Slide 2'/>
       </SwiperSlide>
@@ -44,9 +71,11 @@ function Slider() {
       </SwiperSlide>
       <SwiperSlide>
       <img src='https://img.freepik.com/vector-gratis/consola-juegos-letras-letrero-neon-fondo-ladrillo_1262-11854.jpg' loading='lazy' alt='Slide 4'/>
+      
       </SwiperSlide>
-      ...
+
     </Swiper>
+    
         {/* <div className='slider-main'>
             <div className='slider-icon-left'>
                 <button className='slider-selection-button'>
