@@ -233,7 +233,7 @@ html, body {
 /* Slider INICIO*/
 
 .slider-icon-left{
-    padding: 2em;
+    padding: 3em;
     display: flex;
     justify-content: center;
 }
@@ -272,7 +272,7 @@ html, body {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     font-weight: 600;
-    max-width: 480px;
+    max-width: 500px;
 }
 
 .slider-seccion-2 {
@@ -281,7 +281,9 @@ html, body {
 }
 
 .slider-main-boton-action{
-    margin: 1em;
+    margin-top: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
 }
 
 .slider-img {
@@ -369,12 +371,13 @@ html, body {
 
 /* Media Query para pantallas con un ancho entre 871px y 1107px */
 @media (min-width: 864px) and (max-width: 1092px) {
-
     .slider-icon-left{
-        display: none;
+        padding-left: 3em;
+        padding-right: 0em;
     }
     .slider-icon-right{
-        display: none;
+        padding-left: 0em;
+        padding-right: 0em;
     }
     .slider-main {
         padding-left: 2em;
@@ -1661,7 +1664,7 @@ display: none;
 
 .call-action-text-2 {
     font-size: 24px;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 /*------------------ Fin llamado a la acción FAB ------------*/
@@ -1712,7 +1715,7 @@ display: none;
     align-self: center;
     justify-content: center;
     margin-top: 4em;
-    margin-bottom: 8em;
+    margin-bottom: 12em;
 }
 
 .register-column-1 {
@@ -1729,11 +1732,135 @@ display: none;
     max-width: 302px;
 }
 
-
-
-
-
 /* ----------------------- Fin Register 2 FAB ------------------------------- */
+
+
+/* -------------------- INICIO Informativo FAB ---------------------- */
+
+.informativo-main {
+    margin-top: 16em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: stretch;
+}
+
+.informativo-seccion-1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: stretch;
+    flex-grow: 1;
+}
+.informativo-seccion-2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: stretch;
+    flex-grow: 1;
+}
+.informativo-seccion-3 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: stretch;
+    flex-grow: 1;
+}
+
+.informativo-descripcion-1 {
+    max-width: 300px;
+    font-weight: 300;
+}
+.informativo-descripcion-2 {
+    max-width: 300px;
+    font-weight: 300;
+}
+.informativo-descripcion-3 {
+    max-width: 300px; 
+    font-weight: 300;   
+}
+
+.informativo-icon-1 {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    padding-right: 2em;
+}
+
+.informativo-icon-2 {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    padding-right: 2em;
+}
+
+.informativo-icon-3 {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    padding-right: 2em;
+}
+
+.informativo-titulo-1 {
+    font-weight: 500;
+}
+
+.informativo-titulo-2 {
+    font-weight: 500;   
+}
+
+.informativo-titulo-3 {
+    font-weight: 500;    
+}
+
+
+/* -------------------- FIN Informativo FAB ---------------------- */
+
+
+/* ---------------------------------------- INICIO Ranking FAB ----------------------------------------------*/
+
+.ranking-main { 
+    margin-top: 12em;
+    margin-bottom: 3em;
+}
+
+.ranking-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.ranking-titulo-sub {
+    width: 540px;
+}
+
+
+/* ---------------------------------------- FAB Ranking FAB ----------------------------------------------*/
+
+/* ---------------------------------------- INICIO RankingSlider FAB ----------------------------------------------*/
+
+.ranking-slider-main {
+    box-shadow: none;
+}
+
+.ranking-slider-imagen-tamano {
+    width: 500px;
+    height: 500px;
+    border-radius: 250px;
+    box-shadow: 0px 0px 3px #000000;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+
+/* ---------------------------------------- FAB RankingSlider FAB ----------------------------------------------*/
+
+
+
+
+/* ------------------------------ Fin Componentes -------------------------*/
+
+
+
 
 /*------------------------------------------- Inicio Login FAB --------------------------------------------*/
 
@@ -1896,4 +2023,118 @@ display: none;
 
 /*------------------------------------------- FIN Login FAB --------------------------------------------*/
 
+/* ----------------------------- INICIO MENU VERTICAL ---------------------------------- */
 
+.seccion-body {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.seccion-menu-vertical {
+    background: #343434;
+    color: #fff;
+    min-width: 300px;
+}
+
+.Menu-vertical-user {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.menu-vertical-img-fondo-tamano {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 148px;
+    width: 148px;
+    border-radius: 74px;
+    background: #2D2D2D;
+    margin-bottom: 18px;
+}
+
+.menu-vertical-img-tamano {
+    height: 123px;
+    width: 123px;
+    object-fit: cover;
+    border-radius: 62px;
+}
+
+.menu-vertical-titulo-1 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+.menu-vertical-titulo-2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    padding-bottom: 6px;
+    padding-bottom: 6px;
+}
+.menu-vertical-titulo-3 {
+    font-size: 12px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+
+
+.menu-vertical-ul {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: left;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-vertical-li {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    cursor: pointer;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    height: 45px;
+    padding-left: 10px;
+  }
+  
+  .menu-vertical-li:hover {
+    background-color: #34495e;
+  }
+
+  .menu-vertical-icon {
+
+  }
+
+  .menu-vertical-principal-cuadro {
+    position: absolute;
+    left: 250px;
+    width: 30px;
+    height: 31px;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    background: #CBA4FF 0% 0% no-repeat padding-box;
+    border: 2px solid #00FFEE;
+    opacity: 1;
+  }
+
+  .menu-vertical-principal {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 256px;
+    background: #6E00FF;
+    border: 2px #00FFEE solid;
+    border-left: none;
+  }
+
+/* ----------------------------- FIN MENU VERTICAL ---------------------------------- */
+
+/* ---- Inicio test ----*/
+
+/* ----- Fin test ------ */
