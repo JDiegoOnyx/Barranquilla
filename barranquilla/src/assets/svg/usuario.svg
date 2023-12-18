@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54.6" height="54.6" viewBox="0 0 54.6 54.6">
+  <g id="usuario" transform="translate(0)">
+    <g id="Layer_1_copy_4" data-name="Layer 1 copy 4" transform="translate(0 0)">
+      <g id="_108" data-name="108" transform="translate(0 0)">
+        <g id="background">
+          <ellipse id="Elipse_50" data-name="Elipse 50" cx="27.281" cy="27.281" rx="27.281" ry="27.281" transform="translate(0.038)" fill="#af13fc"/>
+          <path id="Trazado_6479" data-name="Trazado 6479" d="M54.58,256A27.29,27.29,0,1,1,0,256Z" transform="translate(0 -228.69)" fill="#8716f7"/>
+        </g>
+        <g id="_108-2" data-name="108" transform="translate(9.594 9.64)">
+          <path id="Trazado_6480" data-name="Trazado 6480" d="M113.14,293.84H102.252A12.267,12.267,0,0,0,90,306.093a1.386,1.386,0,0,0,1.386,1.386h32.62a1.386,1.386,0,0,0,1.386-1.386A12.267,12.267,0,0,0,113.14,293.84ZM92.865,304.714a9.5,9.5,0,0,1,9.386-8.1H113.14a9.5,9.5,0,0,1,9.386,8.1Z" transform="translate(-90 -272.137)" fill="#fff"/>
+          <path id="Trazado_6481" data-name="Trazado 6481" d="M175.183,109.537a9.643,9.643,0,1,0-9.643-9.643A9.643,9.643,0,0,0,175.183,109.537Zm0-16.523a6.878,6.878,0,1,1-6.878,6.878,6.878,6.878,0,0,1,6.878-6.878Z" transform="translate(-157.487 -90.25)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

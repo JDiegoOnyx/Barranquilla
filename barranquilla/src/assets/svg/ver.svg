@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54.66" height="54.66" viewBox="0 0 54.66 54.66">
+  <g id="ver" transform="translate(-0.001)">
+    <path id="Trazado_6491" data-name="Trazado 6491" d="M48.791,30.461S40.107,41.922,29.4,41.922,10,30.461,10,30.461,18.684,19,29.4,19,48.791,30.461,48.791,30.461Z" transform="translate(-2.065 -3.131)" fill="#dfe5f2"/>
+    <ellipse id="Elipse_51" data-name="Elipse 51" cx="10.493" cy="10.493" rx="10.493" ry="10.493" transform="translate(16.838 16.838)" fill="#666"/>
+    <ellipse id="Elipse_52" data-name="Elipse 52" cx="4.849" cy="4.849" rx="4.849" ry="4.849" transform="translate(22.482 22.481)" fill="#4d4d4d"/>
+    <path id="Trazado_6492" data-name="Trazado 6492" d="M1,28.33A27.33,27.33,0,1,0,28.33,1,27.33,27.33,0,0,0,1,28.33ZM46.358,43.864,12.8,10.3A23.8,23.8,0,0,1,46.358,43.864ZM4.526,28.33A23.7,23.7,0,0,1,10.3,12.8L43.864,46.358A23.8,23.8,0,0,1,4.526,28.33Z" transform="translate(-0.999 -1)" fill="#ff3b65"/>
+  </g>
+</svg>

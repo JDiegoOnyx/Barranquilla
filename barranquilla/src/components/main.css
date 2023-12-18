@@ -58,6 +58,7 @@ html, body {
     justify-content: center;
     padding-right: 2em;
     flex-grow: 1;
+    padding-left: 1em;
 }
 
 /* Estilos para la imagen del logo */
@@ -813,9 +814,63 @@ html, body {
     font-size: 14px;    
 }
 
+/* Estilos para el checkbox */
+.custom-checkbox {
+    width: 16px; /* Ajusta el tamaño del checkbox */
+    height: 16px;
+    -webkit-appearance: none; /* Desactiva los estilos predeterminados del navegador */
+    appearance: none;
+    background-color: #000000; /* Fondo blanco para el checkbox */
+    border: 2px solid #00FFEE; /* Borde del checkbox */
+    border-radius: 50%; /* Borde circular */
+    outline: none; /* Quita el contorno predeterminado del checkbox */
+    cursor: pointer;
+    vertical-align: middle;
+    margin-bottom: 6px;
+  }
+  
+  /* Estilos para el checkbox cuando está marcado */
+  .custom-checkbox:checked {
+    background-color: #00FFEE; /* Cambia el fondo cuando está marcado */
+    border-color: #00FFEE; /* Cambia el borde cuando está marcado */
+  }
+  
+  .custom-checkbox-text {
+    padding-left: 6px;
+    font-size: 13px;
+  }
+
 /*---- BotonLogin Fin ----*/
 
 /*---- BotonRegister Inicio ----*/
+
+
+.edt-container {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .edt-inner-container {
+    position: relative;
+  }
+  
+  .edt-label {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    color: #61dafb;
+    font-size: 14px;
+  }
+  
+  .edt {
+    width: 200px;
+    height: 30px;
+    border: 2px solid #61dafb;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
 
 .boton-register {
     height: 40px;
@@ -849,6 +904,12 @@ html, body {
     color: white;
     border: 2px solid #00FFEE;
     border-radius: 24px;
+}
+
+.boton-hamburger-icon {
+    padding-top: 3px;
+    height: 16px;
+    width: 16px;
 }
 
 /*---- BotonRegister Fin ----*/
@@ -1268,6 +1329,140 @@ display: none;
 }
 /*------- gt-seccion-main-2 Fin --------*/
 
+
+/*------- SeccionTablaDatos Inicio --------*/
+
+.SeccionTablaDatos-main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    justify-content: stretch;
+    background-color: #343434;
+    border-radius: 28px;
+    flex-grow: 1;
+    padding: 1em;
+}
+
+.SeccionTablaDatos-col-1 {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.SeccionTablaDatos-title {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.SeccionTablaDatos-text {
+    font-size: 16px;
+    font-style: italic;
+    color: #D8BBFF;
+}
+
+.SeccionTablaDatos-subcol-1 {
+    display: flex;
+    flex-flow: column wrap;
+}
+.SeccionTablaDatos-subcol-2 {
+    display: flex;
+    flex-flow: row nowrap;
+    min-width: 160px;
+    justify-content: end;
+    color: #95EDFF;
+    font-size: 14px;
+    font-style: italic;
+    padding-top: 0.2em;
+}
+
+.SeccionTablaDatos-icon{
+    width: 14px;
+    height: 14px;
+    padding-top: 0.15em;
+    padding-left: 0.8em;
+}
+.SeccionTablaDatos-user{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.SeccionTablaDatos-column-2 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+    align-items: stretch;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.SeccionTablaDatos-row-2 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: stretch;
+    align-items: stretch;
+    flex-grow: 1;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.SeccionTablaDatos-section-1 {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    max-width: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+}
+.SeccionTablaDatos-section-2 {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    max-width: 60px;
+}
+.SeccionTablaDatos-section-3 {
+    display: flex;
+    flex-grow: 3;
+    align-items: center;
+    justify-content: left;
+    padding: 1em;
+}
+.SeccionTablaDatos-section-4 {
+    display: flex;
+    flex-grow: 3;
+    align-items: center;
+    justify-content: center;
+}
+.SeccionTablaDatos-section-5 {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+.SeccionTablaDatos-section-6 {
+    display: flex;
+    flex-grow: 3;
+    align-items: center;
+    justify-content: center;
+}
+
+.SeccionTablaDatos-flecha {
+    height: 16px;
+    width: 16px;
+    padding-right: 1em;
+}
+
+/*------- SeccionTablaDatos Fin --------*/
+
+
 /*------- gt-seccion-main-1-1 Inicio --------*/
 
 .gt-seccion-datos-2-1-main {
@@ -1363,24 +1558,24 @@ display: none;
     flex-direction: row;
     height: 310px; /* Ajusta la altura según sea necesario */
     border-radius: 28px;
-    background-color: white;
+    background-color: #EBEBEB;
     align-items: center;
     overflow: hidden;
 }
 
 .gt-component1-logo-container {
-    flex-grow: 3;
-    height: 100%;
     object-fit: contain;
+    flex-grow: 3;
+    height: 100%;   
     border-radius: 28px;
-    margin: 10px;
+    margin: 0px 10px 0px 10px;
 }
 
 .gt-component1-logo-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    border-radius: 28px;
+    object-fit: cover;
+    width: 200px;
+    height: auto;
+    margin: 0px 10px 0px 10px;
 }
 
 .gt-component1-text-container {
@@ -1779,21 +1974,21 @@ display: none;
 .informativo-icon-1 {
     height: 60px;
     width: 60px;
-    object-fit: cover;
+    object-fit:contain;
     padding-right: 2em;
 }
 
 .informativo-icon-2 {
     height: 60px;
     width: 60px;
-    object-fit: cover;
+    object-fit:contain;
     padding-right: 2em;
 }
 
 .informativo-icon-3 {
     height: 60px;
     width: 60px;
-    object-fit: cover;
+    object-fit:contain;
     padding-right: 2em;
 }
 
@@ -1826,11 +2021,11 @@ display: none;
     justify-content: center;
     text-align: center;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 32px;
 }
 
 .ranking-titulo-sub {
-    width: 540px;
+    width: 800px;
 }
 
 
@@ -1912,6 +2107,15 @@ display: none;
     border-radius: 28px;
 }
 
+.login-img-icon {
+    position: absolute;
+    top: 10%;
+    left: 58%;
+    width:auto;
+    height: 400px;
+    object-fit: cover;
+    z-index: 2; /* Ajusta el valor de z-index según tus necesidades */
+}
 
 
 /* Resto del código CSS */
@@ -1940,14 +2144,32 @@ display: none;
     flex-grow: 1;
   }
   
-  .login-input {
-    margin: 1em;
+  .label-form{
+    font-size: 14px;
+    font-style: italic;
+    color: #989797;
+    margin-left: 6px;
+    margin-top: 6px;
+  }
+  
+  .edt-form {
+    display: flex;
+    flex-flow: column nowrap;
     background-color: #000000;
     border: 1px solid #343434;
-    border-radius: 5px;
-    color: white;
+    border-radius: 16px;
     width: 400px;
     height: 54px;
+    padding: 2px; 
+    margin-bottom: 1em;   
+  }
+
+  .login-input {
+    padding: 0em 1em 0em 1em;
+    color: white;
+    flex-grow: 1;
+    background: none;
+    border: none;
   }
   
   .forgot-password-text{
@@ -1977,6 +2199,7 @@ display: none;
     color: #fff;
     border: none;
     cursor: pointer;
+    font-size: 16px;
   }
   
   .login-button:hover {
@@ -2025,15 +2248,12 @@ display: none;
 
 /* ----------------------------- INICIO MENU VERTICAL ---------------------------------- */
 
-.seccion-body {
-    display: flex;
-    flex-flow: row nowrap;
-}
 
 .seccion-menu-vertical {
-    background: #343434;
     color: #fff;
     min-width: 300px;
+    padding-top: 2em;
+    padding-bottom: 16em;
 }
 
 .Menu-vertical-user {
@@ -2101,7 +2321,7 @@ display: none;
     font-family: inherit;
     font-style: normal;
     font-weight: normal;
-    height: 45px;
+    height: 47px;
     padding-left: 10px;
   }
   
@@ -2110,14 +2330,17 @@ display: none;
   }
 
   .menu-vertical-icon {
-
+    height: 24px;
+    width: 24px;
+    margin-right: 1em;
+    margin-left: 1em;
   }
 
   .menu-vertical-principal-cuadro {
     position: absolute;
-    left: 250px;
-    width: 30px;
-    height: 31px;
+    left: 244px;
+    width: 32px;
+    height: 32px;
     transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
     background: #CBA4FF 0% 0% no-repeat padding-box;
     border: 2px solid #00FFEE;
@@ -2127,13 +2350,298 @@ display: none;
   .menu-vertical-principal {
     display: flex;
     flex-flow: row nowrap;
-    width: 256px;
+    width: 250px;
     background: #6E00FF;
     border: 2px #00FFEE solid;
     border-left: none;
   }
 
 /* ----------------------------- FIN MENU VERTICAL ---------------------------------- */
+
+/* Body dash INICIO */
+
+.body-dash {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+.seccion-body-dash {
+    flex-grow: 1;
+    background: #000000;
+    border: 1px #242424 solid;
+    border-radius: 64px 0px 0px 0px;
+    padding: 0em 2em 2em 2em;
+}
+
+.body-dash {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+
+/*Inicio seccion 1 dash datos*/
+
+.dash-card-datos {
+    width: auto;
+    border: 1px solid #414141;
+    border-radius: 44px;
+    height: 500px;
+    background: #131313;
+  }
+  
+  .dash-datos-header {
+    position: relative;
+  }
+  
+  .dash-header-image {
+    width: 100%;
+    height: 100px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Ajusta la forma de mostrar la imagen */
+    border-radius: 44px 44px 0px 0px;
+  }
+  
+  .dash-card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.7); /* Color oscuro semi-transparente */
+    border-radius: 44px 44px 0px 0px;
+  }
+  
+  .dash-datos-title {
+    position: absolute;
+    top: 6%;
+    left: 3%;
+    font-size: 18px;
+    width: 400px;
+    color: white;
+  }
+  
+/*Fin seccion 1 dash datos*/
+
+
+  .body-dash-row {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    justify-content: stretch;
+    padding-top: 2em;
+  }
+
+  .body-dash-row-1 {
+    flex-grow: 1;
+  }
+  .body-dash-row-2 {
+    flex-grow: 1;
+  }
+
+
+
+  .dash-academia-card {
+    width: auto;
+    border-radius: 44px;
+    height: 372px;
+    padding: 2em;
+    background: #131313;
+    margin-right: 2em;
+  }
+
+  .dash-academia-titulo {
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .dash-academia-subtitulo {
+    padding: 0px;
+    margin: 0px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #D8BBFF;
+  }
+
+  .dash-alerta-seccion {
+    width: auto;
+    border-radius: 24px;
+    height: 372px;
+  }
+
+  .dash-alerta-card {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: stretch;
+    align-items: center;
+    padding: 0.2em 0.6em 0em 0.6em;
+    border-radius: 24px;
+    height: 120px;
+    margin: 20px 0px 0px 0px;
+    background: #131313;   
+  }
+
+  .dash-alerta-image {
+    height: 110px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+
+  .dash-informacion-texto {
+    flex-grow: 1;
+    width: 200px;
+    padding-left: 2em;
+  }
+
+  .dash-informacion-titulo {
+    padding-bottom: 1em;
+  }
+
+  .dash-informacion-subtitulo {
+    color: #04FEB9;
+  }
+
+  .dash-informacion-ir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background: black;
+    border-radius: 22px;
+    margin-right: 1em;
+  }
+
+  .dash-informacion-icon {
+    height: 20px;
+    width: 20px;
+    padding-left: 3px;
+  }
+
+  .dash-alerta-titulo {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .dash-alerta-titulo-icon {
+    width: 40px;
+    height: 40px;
+    padding-right: 1em;
+  }
+
+
+
+
+
+  .dash-llamado-accion {
+    width: auto;
+    border: 1px solid #414141;
+    border-radius: 44px;
+    height: 140px;
+    background: #131313;
+  }
+
+  .dash-llamado-datos-header {
+    position: relative;
+  }
+
+  .dash-llamado-header-image {
+    width: 100%;
+    height: 140px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Ajusta la forma de mostrar la imagen */
+    border-radius: 44px;
+  }
+
+  .dash-llamado-card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 140px;
+    background: rgba(0, 0, 0, 0.8); /* Color oscuro semi-transparente */
+    border-radius: 44px;
+  }
+
+
+  .dash-llamado-datos-title {
+    position: absolute;
+    top: 10%;
+    left: 4%;
+    font-size: 28px;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .dash-llamado-datos-descripcion {
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    font-size: 16px;
+    width: 600px;
+    color: white;
+  }
+
+
+  .dash-llamado-boton {
+    position: absolute;
+    top: 35%;
+    left: 75%;
+    width: 307px;
+    height: 37px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: none;
+    border-radius: 23px;
+    opacity: 1;
+    font: italic normal 14px/21px Poppins;
+    font-weight: 500;
+    letter-spacing: 0px;
+    color: #6E00FF;
+    opacity: 1;
+  }
+
+
+  .dash-datos-tabla {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    justify-content: stretch;
+    border-radius: 28px;
+    flex-grow: 1;
+    padding: 1em;
+    width: 360px;
+}
+
+
+  .dash-video-juegos {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    justify-content: stretch;
+    padding: 0px;
+    width: auto;
+    border-radius: 44px;
+    background: #131313;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .dash-video-juegos-seccion-2 {
+    flex-grow: 1;
+  }
+  
+
+
+/* Body dash FIN*/
+
 
 /* ---- Inicio test ----*/
 
