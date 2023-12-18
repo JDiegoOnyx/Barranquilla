@@ -5,7 +5,7 @@ import { XYPlot, LineMarkSeries, XAxis, YAxis } from 'react-vis';
 
 function DashCardDatos() {
   const data = [
-    { x: 0, y: 8 },
+    { x: 0, y: 1 },
     { x: 1, y: 5 },
     { x: 2, y: 4 },
     { x: 3, y: 9 },
@@ -17,6 +17,19 @@ function DashCardDatos() {
     { x: 9, y: 0 }
   ];
   
+  const data1 = [
+    { x: 0, y: 6 },
+    { x: 1, y: 5 },
+    { x: 2, y: 4 },
+    { x: 3, y: 5 },
+    { x: 4, y: 1 },
+    { x: 5, y: 4 },
+    { x: 6, y: 7 },
+    { x: 7, y: 1 },
+    { x: 8, y: 2 },
+    { x: 9, y: 0 }
+  ];
+
   return (
     <div className=''>
       <div className="dash-card-datos">
@@ -25,15 +38,20 @@ function DashCardDatos() {
           <div className="dash-card-overlay"></div>
           <p className='dash-datos-title'><i>Datos y estadísticas con <strong>machine learning e inteligencia artificial</strong></i></p>
         </div>
-        <div className="">
-        <XYPlot width={1400} height={300}>
+        <div className="chart-container">
+        <XYPlot width="400" height={300}>
+          <XAxis style={{ line: { stroke: 'white' }, ticks: { stroke: 'white' }, text: { fill: 'white' } }} />
+          <YAxis style={{ line: { stroke: 'white' }, ticks: { stroke: 'white' }, text: { fill: 'white' } }} />
           <LineMarkSeries
             data={data}
             style={{ strokeLinejoin: "round" }}
           />
-          <XAxis style={{ line: { stroke: 'white' }, ticks: { stroke: 'white' }, text: { fill: 'white' } }} />
-          <YAxis style={{ line: { stroke: 'white' }, ticks: { stroke: 'white' }, text: { fill: 'white' } }} />
+          <LineMarkSeries
+            data={data1}
+            style={{ strokeLinejoin: "round" }}
+          />
         </XYPlot>
+
         </div>
       </div>
     </div>
