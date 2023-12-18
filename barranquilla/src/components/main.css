@@ -1473,12 +1473,12 @@ display: none;
     background-color: #0f0f0f;
     border-radius: 28px;
     flex-grow: 1;
-    padding: 1em;
 }
 
 .gt-seccion-datos-title-2 {
     font-size: 32px;
     max-width: 580px;
+    padding: 0.5em;
 }
 
 
@@ -2435,6 +2435,30 @@ display: none;
     width: 200px !important;
   }
 
+.custom-tooltip {
+    background: #00FFE5;
+    color: black;
+    width: 200px;
+    border-radius: 0px 8px;
+    padding: 0px 4px 0px 8px;
+    margin: 0px;
+    font-weight: 500;
+}
+
+.custom-label {
+ color: #000000;
+ font-size: 18px;
+ font-weight: 600;
+ margin: 0px;
+ padding: 0px;
+}
+
+.dash-grafico-pastel{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: stretch;
+    align-items: stretch;
+}
 
 /*Fin seccion 1 dash datos*/
 
@@ -2651,8 +2675,13 @@ display: none;
     flex-grow: 1;
   }
   
+  .dashboard-container {
+    width: 100%; /* Cambiado a 100% para ocupar todo el ancho disponible */
+}
 
-
+.graph-container {
+    width: 100%; /* También se cambia a 100% para ajustarse al contenedor principal */
+}
 /* Body dash FIN*/
 
 

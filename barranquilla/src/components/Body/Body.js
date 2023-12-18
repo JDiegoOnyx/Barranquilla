@@ -144,7 +144,7 @@ function Body() {
               <Register2/>
             </div>
           </div>
-      */}
+        */}
       </div>  
     </div>    
   );
