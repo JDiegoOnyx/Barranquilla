@@ -1,12 +1,13 @@
 import React from 'react'
 import '../../components/main.css'
 import llamadoAction from '../../assets/img/llamadoAction.png';
+import ManoFinanza from '../../assets/svg/mano-finanza.svg';
 
 function GTComponentGameTrends1() {
   return (
     <div class='gt-component1-main-container'>
         <div class='gt-component1-logo-container'>
-            <img class='gt-component1-footer-logo-main' src={llamadoAction}/>  
+            <img class='gt-component1-footer-logo-main' src={ManoFinanza}/>  
         </div>
         <div class='gt-component1-text-container'>
             <div class='gt-component1-sub-text'>

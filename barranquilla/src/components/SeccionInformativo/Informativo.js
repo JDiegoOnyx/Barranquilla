@@ -1,13 +1,16 @@
 import React from 'react'
 import '../../components/main.css'
 import ImagenUsuario from '../../assets/img/Imagen-prueba.jpg';
+import ChatContacto from '../../assets/svg/chat-contacto.svg';
+import PreguntasFrecuentes from '../../assets/svg/preguntas-frecuentes.svg';
+import Blog from '../../assets/svg/blog.svg';
 
 function Informativo() {
   return (
     <div className='informativo-main'>
         <div className='informativo-seccion-1'>
             <div>
-                <img className='informativo-icon-1' src={ImagenUsuario}/>
+                <img className='informativo-icon-1' src={ChatContacto}/>
             </div>
             <div>
                 <h3 className='informativo-titulo-1'>
@@ -20,7 +23,7 @@ function Informativo() {
         </div>
         <div className='informativo-seccion-2'>
             <div>
-                <img className='informativo-icon-2' src={ImagenUsuario}/>
+                <img className='informativo-icon-2' src={PreguntasFrecuentes}/>
             </div>
             <div>
                 <h3 className='informativo-titulo-2'>
@@ -33,7 +36,7 @@ function Informativo() {
         </div>
         <div className='informativo-seccion-3'>
             <div>
-                <img className='informativo-icon-3' src={ImagenUsuario}/>
+                <img className='informativo-icon-3' src={Blog}/>
             </div>
             <div>
                 <h3 className='informativo-titulo-3'>

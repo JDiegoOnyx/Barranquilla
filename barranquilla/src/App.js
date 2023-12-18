@@ -12,12 +12,15 @@ function App() {
         <Header/>
       </div>
       <div className='seccion-body'>
+        {/*
         <div className='seccion-menu-vertical'>
           <MenuVertical/>
         </div>
-        <div>
+        <div className='seccion-body-dash'>
           <Body/>
         </div>
+        */}
+        <Body/>
       </div>
       <div className='seccion-footer'>
         <Footer/>
