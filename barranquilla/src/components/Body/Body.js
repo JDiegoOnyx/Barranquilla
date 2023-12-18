@@ -30,7 +30,7 @@ function Body() {
   return (
     <div className='body-main'>
       <div className='body-dash'>
-        {/*
+        
         <div>
           <DashCardDatos/>
         </div>
@@ -99,13 +99,13 @@ function Body() {
         <div>
             <DashLlamadoAccion/>
         </div>
-        */}
+        
       </div>
       <div className='body-login'>
         {/*<LoginForm/>*/}
       </div>
       <div className='body-home'>
-        
+        {/*
         <div>
             <Slider/>
           </div>
@@ -144,7 +144,7 @@ function Body() {
               <Register2/>
             </div>
           </div>
-          
+      */}
       </div>  
     </div>    
   );
