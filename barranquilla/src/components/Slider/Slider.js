@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../../components/main.css'
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-import { Autoplay } from 'swiper/modules';
+import { Autoplay} from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Slide1 from './Slide1';
 
@@ -14,6 +14,22 @@ import 'swiper/css/scrollbar';
 
 
 function Slider() {
+    const [shouldChangeSlide, setShouldChangeSlide] = useState(false);
+
+  const handleSlideChangeTransitionEnd = (swiper) => {
+    if (swiper.isEnd && shouldChangeSlide) {
+      swiper.slideTo(0);
+      setShouldChangeSlide(false); // Reiniciar el estado después del cambio
+    }
+  };
+
+  const handleNavigationClick = () => {
+    // Lógica específica al hacer clic en el botón de navegación del swiper
+    console.log('Botón de navegación clickeado');
+    setShouldChangeSlide(true); // Habilitar el cambio de slide al hacer clic en el botón de navegación
+  };
+    
+  
   return (
     <div>
         <Swiper

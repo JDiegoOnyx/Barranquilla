@@ -2360,7 +2360,7 @@ display: none;
 
 /* Body dash INICIO */
 
-.body-dash {
+.seccion-body-dash-main {
     display: flex;
     flex-flow: row nowrap;
     align-items: stretch;
