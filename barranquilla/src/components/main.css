@@ -2638,8 +2638,13 @@ display: none;
     flex-grow: 1;
   }
   
+  .dashboard-container {
+    width: 100%; /* Cambiado a 100% para ocupar todo el ancho disponible */
+}
 
-
+.graph-container {
+    width: 100%; /* También se cambia a 100% para ajustarse al contenedor principal */
+}
 /* Body dash FIN*/
 
 
