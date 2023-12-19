@@ -3,13 +3,14 @@ import React, { useCallback, useState } from "react";
 import { PieChart, Pie, Sector, ResponsiveContainer, Cell } from "recharts";
 
 const data = [
-  { name: "Group A", value: 400 },
-  { name: "Group B", value: 300 },
-  { name: "Group C", value: 300 },
-  { name: "Group D", value: 200 }
+  { name: "Animación", value: 400 },
+  { name: "Programación", value: 300 },
+  { name: "Unity", value: 300 },
+  { name: "Html 5", value: 200 },
+  { name: "Modelado 3D", value: 400 }
 ];
 
-const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
+const COLORS = ['#BE51EE', '#F7FA30', '#FAB130', '#FF8484', '#FFFFFF'];
 
 const renderActiveShape = (props) => {
   const RADIAN = Math.PI / 180;
@@ -69,14 +70,14 @@ const renderActiveShape = (props) => {
         x={ex + (cos >= 0 ? 1 : -1) * 12}
         y={ey}
         textAnchor={textAnchor}
-        fill="#333"
+        fill="#FFFFFF"
       >{`PV ${value}`}</text>
       <text
         x={ex + (cos >= 0 ? 1 : -1) * 12}
         y={ey}
         dy={18}
         textAnchor={textAnchor}
-        fill="#999"
+        fill="#FFFFFF"
       >
         {`(Rate ${(percent * 100).toFixed(2)}%)`}
       </text>
@@ -95,12 +96,12 @@ export default function GraficoPastel() {
 
   return (
     <ResponsiveContainer width={500} height={600}>
-      <PieChart width={200} height={400}>
+      <PieChart width={220} height={400}>
         <Pie
           activeIndex={activeIndex}
           activeShape={renderActiveShape}
           data={data}
-          cx={200}
+          cx={260}
           cy={160}
           innerRadius={70}
           outerRadius={100}
