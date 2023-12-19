@@ -12,6 +12,7 @@ function App() {
         <Header/>
       </div>
       <div className='seccion-body-dash-main'>
+      {/*<div className='seccion-body'>*/}
         
         <div className='seccion-menu-vertical'>
           <MenuVertical/>

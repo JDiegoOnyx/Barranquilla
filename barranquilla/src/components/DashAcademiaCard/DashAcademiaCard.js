@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../components/main.css'
 import ImagenUser from '../../assets/img/Imagen-prueba.jpg'
+import GraficoPastel from '../GraficoPastel/GraficoPastel'
 
 function DashAcademiaCard() {
   return (
@@ -12,6 +13,14 @@ function DashAcademiaCard() {
             <p className='dash-academia-subtitulo'>
             <i>Academia GT 360</i>
             </p>
+            <div className='dash-grafico-pastel'>
+              <div>
+                <GraficoPastel/>
+              </div>
+              <div>
+                buenas
+              </div>
+            </div>
         </div>
     </div>    
   )
