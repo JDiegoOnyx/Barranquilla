@@ -2423,6 +2423,19 @@ display: none;
     color: white;
   }
   
+  .chart-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: stretch;
+    align-items: stretch;
+  }
+
+  .chart-container-main {
+    height: 100px !important;
+    width: 200px !important;
+  }
+
+
 /*Fin seccion 1 dash datos*/
 
 
